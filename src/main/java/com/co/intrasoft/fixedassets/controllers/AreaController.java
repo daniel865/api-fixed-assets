@@ -12,7 +12,11 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping(path = "/area", produces = {"application/json", "text/xml"})
+@RequestMapping(
+        path = "/area",
+        produces = {"application/json", "text/xml"},
+        consumes = { "application/json", "text/xml" }
+)
 @CrossOrigin(origins = "*")
 public class AreaController {
 

@@ -4,7 +4,7 @@ import org.springframework.data.annotation.Id;
 
 import java.util.Objects;
 
-public class Area {
+public class Area implements AssignableResource {
 
     @Id
     private String id;
